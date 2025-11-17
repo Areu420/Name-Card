@@ -1,0 +1,70 @@
+body {
+    margin: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.avatar {
+    width: 40%;
+}
+
+.card {
+    background-color: #ddebf8;
+    border-bottom: 5px solid #d8cefe;
+    width: 400px;
+    display: flex;
+    margin: 0 auto;
+    padding: 20px;
+    justify-content: space-around;
+}
+
+p,h4,h3 {
+    text-align: center;
+}
+
+.border-blue {
+    border: 2px dotted blue;
+}
+
+.text {
+    color: #2b2839;
+}
+
+.color-animate {
+    font-weight: bold;
+    color: #2b2839;
+    transition: color 0.3s;
+}
+
+.color-animate:hover {
+    animation: colors 2s linear infinite;
+}
+
+@keyframes colors {
+    0% {
+        color: #2b2839;
+    }
+
+    2% {
+        color: hsl(0, 100%, 50%);
+    }
+
+    20% {
+        color: hsl(60, 100%, 50%);
+    }
+
+    40% {
+        color: hsl(120, 100%, 50%);
+    }
+
+    60% {
+        color: hsl(180, 100%, 50%);
+    }
+
+    80% {
+        color: hsl(240, 100%, 50%);
+    }
+
+    100% {
+        color: hsl(360, 100%, 50%);
+    }
+}
